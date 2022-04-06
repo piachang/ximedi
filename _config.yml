@@ -1,15 +1,11 @@
-title: Tailwind Jekyll Starter Kit
-description: A starter kit for using Tailwind with Jekyll
+title: An Illustrated Dive
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - gulpfile.babel.js
-  - LICENSE.md
-  - node_modules
-  - package.json
-  - package-lock.json
-  - README.md
-  - src
-  - tailwind.config.js
-  - netlify.toml
+description: >- # this means to ignore newlines until "baseurl:"
+  Wip.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "anillustrateddive.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+# theme:
+# plugins:
+#   - jekyll-feed
