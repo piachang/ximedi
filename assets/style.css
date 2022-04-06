@@ -1,0 +1,30 @@
+body {
+  color: rgb(48, 47, 47);
+}
+
+h1 {
+  font-family: 'Homemade Apple', sans-serif;
+  text-align: center;
+
+}
+
+
+@media screen and (min-width: 48em) {
+  .nav {
+    padding: 5% 2em 0;
+    text-align: right;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+  }
+
+  .nav h1 {
+    font-size: 100%;
+  }
+
+
+}
+
+main.content {
+  padding-top: 5em;
+}
