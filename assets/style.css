@@ -28,3 +28,7 @@ h1 {
 main.content {
   padding-top: 5em;
 }
+
+.post img {
+  width: 100%;
+}
