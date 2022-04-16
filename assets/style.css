@@ -42,9 +42,12 @@ main {
 }
 
 .sheet .description .text {
-  margin-top: 10em;
+  margin-top: 5em;
   text-align: center;
-  vertical-align: middle;
-  font-size: 1.5em;
-  line-height: 2em;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+[x-cloak] {
+  display: none !important;
 }
