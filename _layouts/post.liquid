@@ -1,14 +1,9 @@
 ---
-layout: post
-default_post: la_mer
+layout: default
 ---
 
-
-
-{% assign thepost = site.posts | where:"slug", "la_mer" %}
-
 <div class="post">
-  {% for sh in thepost[0].sheets %}
+  {% for sh in page.sheets %}
   <div class="sheet" x-data="{ open: false }" x-on:click="open = ! open">
     <img src="/assets/img/{{sh.img}}" loading="lazy">
     <div class="description" x-show="open" x-transition>
@@ -18,4 +13,7 @@ default_post: la_mer
     </div>
   </div>
   {% endfor %}
+</div>
+<div>
+{{ content }}
 </div>
