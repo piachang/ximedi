@@ -1,15 +1,12 @@
 ---
 layout: default
+default_post: la_mer
 ---
 
-{% for post in site.posts %}
+{% assign thepost = site.posts | where:"slug", "la_mer" %}
+
 <div class="post">
-  <h1>
-    {{post.title}}
-  </h1>
   <p>
-    {{post.content}}
+    {{thepost[0].content}}
   </p>
 </div>
-
-{% endfor %}
