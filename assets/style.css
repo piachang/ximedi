@@ -17,7 +17,9 @@ main {
 }
 
 .brand-title {
-  padding: 1em 1em 1em 1em;
+  font-size: xx-large;
+  margin-top: 22px;
+  margin-bottom: -10px;
 }
 
 .content {
@@ -50,4 +52,18 @@ main {
 
 [x-cloak] {
   display: none !important;
+}
+
+.default {
+  margin-bottom: 200px;
+}
+
+.default p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+h1 a {
+  color: rgb(48, 47, 47);
+  text-decoration: none;
 }
