@@ -1,11 +1,11 @@
 ---
 layout: post
-default_post: la_mer
+default_post: weird_fishes
 ---
 
 
 
-{% assign thepost = site.posts | where:"slug", "la_mer" %}
+{% assign thepost = site.posts | where:"slug", page.default_post %}
 
 <div class="post">
   {% for sh in thepost[0].sheets %}
