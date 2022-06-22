@@ -71,6 +71,7 @@ h1 a {
 
 .navbar img {
   max-height: 150px;
+  max-width: 100%;
 }
 
 .support a {
