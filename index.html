@@ -1,6 +1,6 @@
 ---
 layout: post
-default_post: weird_fishes
+default_post: intermedio_i
 ---
 
 
@@ -9,6 +9,7 @@ default_post: weird_fishes
 
 <div class="post">
   {% for sh in thepost[0].sheets %}
+  {% if sh.img %}
   <div class="sheet" x-data="{ open: false }" x-on:click="open = ! open">
     <img src="https://anillustrateddive.sfo3.digitaloceanspaces.com/{{sh.img}}" loading="lazy">
     <div class="description" x-cloak x-show="open" x-transition>
@@ -17,5 +18,12 @@ default_post: weird_fishes
       </div>
     </div>
   </div>
+  {% elsif sh.imgs %}
+  <div class="sheet-horizontal">
+    {% for im in sh.imgs %}
+    <img src="https://anillustrateddive.sfo3.digitaloceanspaces.com/{{im}}" loading="lazy">
+    {% endfor %}
+  </div>
+  {% endif%}
   {% endfor %}
 </div>
