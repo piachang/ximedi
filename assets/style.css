@@ -88,11 +88,6 @@ h1 a {
   max-width: 100%;
 }
 
-.sheet-horizontal img {
-  height: 100%;
-  max-width: auto;
-}
-
 .sheet-horizontal {
   display: inline-block;
   height: 95vh;
@@ -100,4 +95,18 @@ h1 a {
   overflow: scroll;
   white-space: nowrap;
   border: 1px solid rgb(191, 191, 191);
+}
+
+.sheet-horizontal img {
+  height: 100%;
+  max-width: auto;
+}
+
+.navbar {
+  box-shadow: 0px 10px 13px -8px rgba(0, 0, 0, 0.18)
+}
+
+.latest h1 {
+  font-size: medium;
+  color: rgb(43, 43, 43)
 }
