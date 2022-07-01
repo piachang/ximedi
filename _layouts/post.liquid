@@ -7,11 +7,13 @@ layout: default
     {% if sh.img %}
       <div class="sheet" x-data="{ open: false }" x-on:click="open = ! open">
         <img src="https://anillustrateddive.sfo3.digitaloceanspaces.com/{{sh.img}}">
+        {% if sh.text %}
         <div class="description" x-cloak x-show="open" x-transition>
           <div class="text">
             {{sh.text | newline_to_br}}
           </div>
         </div>
+        {% endif %}
       </div>
     {% elsif sh.imgs %}
       <div class="sheet-horizontal">
