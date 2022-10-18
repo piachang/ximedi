@@ -9,8 +9,9 @@ default_post: not_the_news
 
 <div class="post">
   {% for sh in thepost[0].sheets %}
+  {% point = sh.text ? "pointer" : "" %}
   {% if sh.img %}
-  <div class="sheet" x-data="{ open: false }" x-on:click="open = ! open">
+  <div class="sheet {{ point }}" x-data="{ open: false }" x-on:click="open = ! open">
     <img src="https://anillustrateddive.sfo3.digitaloceanspaces.com/{{sh.img}}">
     {% if sh.text %}
     <div class="description" x-cloak x-show="open" x-transition>

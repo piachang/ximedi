@@ -25,9 +25,12 @@ main {
   width: 100%;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .sheet {
   position: relative;
-  cursor: pointer;
 }
 
 .sheet .description {
@@ -39,7 +42,6 @@ main {
   background-color: white;
   opacity: 90%;
   z-index: 1000;
-  cursor: pointer; 
 }
 
 .sheet .description .text {
