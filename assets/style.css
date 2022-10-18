@@ -27,6 +27,7 @@ main {
 
 .sheet {
   position: relative;
+  cursor: pointer;
 }
 
 .sheet .description {
@@ -37,7 +38,8 @@ main {
   top: 0px;
   background-color: white;
   opacity: 90%;
-  z-index: 1000
+  z-index: 1000;
+  cursor: pointer; 
 }
 
 .sheet .description .text {
